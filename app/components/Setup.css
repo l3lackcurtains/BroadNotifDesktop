@@ -1,0 +1,11 @@
+.container {
+	margin: 80px 0;
+	padding: 24px;
+	background: rgba(0,0,0,0.2);
+}
+
+.errMsg{
+	margin: 18px 0;
+	color: #FF1744;
+	font-weight: 700;
+}
