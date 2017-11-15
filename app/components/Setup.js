@@ -14,6 +14,15 @@ class Setup extends Component {
 		password: '',
 	}
 
+	componentWillReceiveProps(nextProps) {
+		if (nextProps.addUser.isReceived) {
+			this.setState({
+				email: '',
+				password: '',
+			})
+		}
+	}
+
 	onEmailChange = e => this.setState({ email: e.target.value })
 	onPasswordChange = e => this.setState({ password: e.target.value })
 
@@ -28,13 +37,10 @@ class Setup extends Component {
 	}
 	render() {
 		const { addUser } = this.props
-		if (addUser.isReceived) {
-			return <Redirect to="/main" />
-		}
 		return (
 			<Grid>
 				<Row>
-					<Col xs={6} xsOffset={3}>
+					<Col xs={12}>
 						<div className={styles.container}>
 							<p>Setup Email and Password</p>
 							<Row>
@@ -55,6 +61,9 @@ class Setup extends Component {
 							</Row>
 							{
 								addUser.error ? <div className={styles.errMsg}>{addUser.data}</div> : null
+							}
+							{
+								addUser.isReceived ? <div>Changed Email Password successfully</div> : null
 							}
 							<Row className={styles.loginBtn}>
 								<RaisedButton

@@ -198,6 +198,7 @@
     "react-flexbox-grid": "^2.0.0",
     "react-hot-loader": "3.0.0-beta.6",
     "react-html-parser": "^2.0.1",
+    "react-moment": "^0.6.8",
     "react-notification-system": "^0.2.16",
     "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
