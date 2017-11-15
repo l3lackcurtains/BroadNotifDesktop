@@ -108,7 +108,7 @@ export const removeEmailAction = (id) => dispatch => {
 }
 
 // get user
-export const getEmail = () => dispatch => {
+export const getEmailAction = () => dispatch => {
 	dispatch(getEmailReq());
 	const url = `${c.apiPage}/api/emails`;
 	return axios({
@@ -121,4 +121,16 @@ export const getEmail = () => dispatch => {
 			dispatch(getEmailErr(res.data.message))
 		}
 	}).catch(err => dispatch(getEmailErr(err)))
+}
+
+export const getEmailResetAction = () => dispatch => {
+	dispatch(getEmailReset());
+}
+
+export const removeEmailResetAction = () => dispatch => {
+	dispatch(removeEmailReset());
+}
+
+export const addEmailResetAction = () => dispatch => {
+	dispatch(addEmailReset());
 }

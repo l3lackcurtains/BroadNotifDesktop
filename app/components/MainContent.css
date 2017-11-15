@@ -1,3 +1,8 @@
-.logout{
-	padding: 16px 0;
+.clear{
+	padding: 8px 0;
+}
+
+.loading {
+	text-align: center;
+	margin-top: 36px;
 }

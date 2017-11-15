@@ -57,6 +57,7 @@ export const removeInboxAction = () => dispatch => {
 		method: 'delete',
 		url,
 	}).then((res) => {
+		console.log(res)
 		if (res.data.success) {
 			dispatch(removeInboxSuccess(res.data.message))
 		} else {
@@ -66,7 +67,7 @@ export const removeInboxAction = () => dispatch => {
 }
 
 // get user
-export const getInbox = () => dispatch => {
+export const getInboxAction = () => dispatch => {
 	dispatch(getInboxReq());
 	const url = `${c.apiPage}/api/inbox`;
 	return axios({
@@ -79,4 +80,12 @@ export const getInbox = () => dispatch => {
 			dispatch(getInboxErr(res.data.message))
 		}
 	}).catch(err => dispatch(getInboxErr(err)))
+}
+
+export const getInboxResetAction = () => dispatch => {
+	dispatch(getInboxReset());
+}
+
+export const removeInboxResetAction = () => dispatch => {
+	dispatch(getInboxReset());
 }

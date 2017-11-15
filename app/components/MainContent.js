@@ -1,14 +1,16 @@
 // @flow
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 import { Row, Col, Grid } from 'react-flexbox-grid'
-import { removeUserAction } from '../actions/user'
 import { Event } from 'react-socket-io'
 import Sound from 'react-sound'
 import Moment from 'react-moment';
-import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
+import { Card, CardHeader, CardText } from 'material-ui/Card';
+import FlatButton from 'material-ui/FlatButton';
 import ReactHtmlParser from 'react-html-parser'
-import FlatButton from 'material-ui/FlatButton'
 import styles from './MainContent.css';
+import CircularProgress from 'material-ui/CircularProgress';
+import { getInboxAction, getInboxResetAction, removeInboxAction, removeInboxResetAction } from '../actions/inbox'
 
 class Main extends Component {
 	constructor(props, context) {
@@ -21,14 +23,26 @@ class Main extends Component {
 		mails: []
 	}
 
+	componentWillMount() {
+		this.props.dispatch(getInboxAction())
+	}
+
+	componentWillReceiveProps(nextProps) {
+		if (nextProps.removeInbox.isReceived && nextProps.inbox.isReceived) {
+			console.log('yeahhh')
+			this.props.dispatch(getInboxResetAction())
+		}
+	}
+	componentWillUnmount() {
+		this.props.dispatch(getInboxResetAction())
+		this.props.dispatch(removeInboxResetAction())
+	}
+
 	onMessage = (d) => {
-		console.log(d)
-		this.setState({
-			mails: [ d.mail, ...this.state.mails ],
-		})
 		this.setState({
 			playStatus: Sound.status.PLAYING,
 		})
+		this.props.dispatch(getInboxAction())
 	}
 
 	handleSongFinishedPlaying = () => {
@@ -37,35 +51,56 @@ class Main extends Component {
 		})
 	}
 
+	clearInbox = (e) => {
+		e.preventDefault()
+		this.props.dispatch(removeInboxAction())
+	}
+
+
 	render() {
-		const { logout } = this.props
+		const { inbox } = this.props	
 		return (
 			<div>
 				<Grid>
 					<Row>
-						<Col xs={8} xsOffset={2}>
-							<p>App is running, You will receive notification instantly when new email is received.</p>
-						</Col>
-						<Col xs={8} xsOffset={2}>
-							{
-								this.state.mails.map((m, i) => {
-									return <div key={i} style={{ padding: '4px' }}>
-										<Card>
-											<CardHeader
-												title={`From ${m.from}`}
-												subtitle={<Moment interval={30000} fromNow>{m.date}</Moment>}
-												actAsExpander
-												showExpandableButton
-											/>
-											<CardText expandable>
-												
-												<b>{m.subject}</b>
-												<p>{ReactHtmlParser(m.body)}</p>
-											</CardText>
-										</Card>
+						<Col xs={10} xsOffset={1}>
+							<Row>
+								<Col xs={10}>
+									<p>App is running, You will receive notification instantly when new email is received.</p>
+								</Col>
+								<Col xs={2}>
+									<div className={styles.clear}>
+										<FlatButton
+											label="Clear"
+											secondary
+											onClick={this.clearInbox}
+										/>
 									</div>
-								})
-							}
+								</Col>
+							</Row>
+							<Row>
+								{
+									inbox.isLoading ? <Col xs={12}><div className={styles.loading}><CircularProgress size={80} thickness={5} /></div></Col> : null
+								}
+								{
+									inbox.isReceived && inbox.data.map((m, i) => {
+										return <Col xs={8} xsOffset={2} key={i} style={{ padding: '4px' }}>
+											<Card>
+												<CardHeader
+													title={`From ${m.from}`}
+													subtitle={<Moment interval={30000} fromNow>{m.date}</Moment>}
+													actAsExpander
+													showExpandableButton
+												/>
+												<CardText expandable>
+													<b>{m.subject}</b>
+													<p>{ReactHtmlParser(m.body)}</p>
+												</CardText>
+											</Card>
+										</Col>
+									})
+								}
+							</Row>
 						</Col>
 					</Row>
 				</Grid>
@@ -81,5 +116,9 @@ class Main extends Component {
 	}
 }
 
+const mapStateToProps = (state) => ({
+	inbox: state.inbox,
+	removeInbox: state.removeInbox,
+})
 
-export default Main
+export default connect(mapStateToProps)(Main)

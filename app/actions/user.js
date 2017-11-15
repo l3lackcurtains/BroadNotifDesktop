@@ -108,7 +108,7 @@ export const removeUserAction = () => dispatch => {
 }
 
 // get user
-export const getUser = () => dispatch => {
+export const getUserAction = () => dispatch => {
 	dispatch(getUserReq());
 	const url = `${c.apiPage}/api/users`;
 	return axios({
@@ -125,4 +125,16 @@ export const getUser = () => dispatch => {
 			dispatch(getUserErr(res.data.message))
 		}
 	}).catch(err => dispatch(getUserErr(err)))
+}
+
+export const getUserResetAction = () => dispatch => {
+	dispatch(getUserReset());
+}
+
+export const removeUserResetAction = () => dispatch => {
+	dispatch(removeUserReset());
+}
+
+export const addUserResetAction = () => dispatch => {
+	dispatch(addUserReset());
 }
