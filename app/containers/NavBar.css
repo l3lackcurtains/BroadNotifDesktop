@@ -8,3 +8,8 @@
 	display: flex;
 	justify-content: flex-end;
 }
+
+.logo {
+	width: 110px;
+	padding-top: 8px;
+}

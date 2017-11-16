@@ -6,3 +6,10 @@
 	text-align: center;
 	margin-top: 36px;
 }
+
+.errMsg{
+	text-align: center;
+	margin: 54px 0;
+	color: #F44336;
+	font-weight: 600;	
+}

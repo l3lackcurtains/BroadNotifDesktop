@@ -58,7 +58,7 @@ class Main extends Component {
 
 
 	render() {
-		const { inbox } = this.props	
+		const { inbox } = this.props
 		return (
 			<div>
 				<Grid>
@@ -81,6 +81,9 @@ class Main extends Component {
 							<Row>
 								{
 									inbox.isLoading ? <Col xs={12}><div className={styles.loading}><CircularProgress size={80} thickness={5} /></div></Col> : null
+								}
+								{
+									inbox.error ? <Col xs={12}><p className={styles.errMsg}>Something went wrong, Please restart the application.</p></Col> : null
 								}
 								{
 									inbox.isReceived && inbox.data.map((m, i) => {

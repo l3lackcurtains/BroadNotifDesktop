@@ -15,7 +15,7 @@ export default class NavBar extends Component {
 			<Grid>
 				<Row>
 					<Col xs={11}>
-						<Link to="/"><h3>Broad Notif App</h3></Link>
+						<Link to="/"><img className={styles.logo} src="https://broadlink.com.np/assets/frontend/img/logo_.png" alt="BroadLink" /></Link>
 					</Col>
 					<Col xs={1}>
 						<Link to="/setup" className={styles.setup}>

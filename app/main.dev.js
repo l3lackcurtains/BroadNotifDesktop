@@ -11,6 +11,8 @@
  * @flow
  */
 import { app, BrowserWindow } from 'electron';
+import path from 'path'
+
 import MenuBuilder from './menu';
 
 let mainWindow = null;
@@ -62,7 +64,9 @@ app.on('ready', async () => {
   mainWindow = new BrowserWindow({
     show: false,
     width: 1024,
-    height: 728
+    height: 728,
+    backgroundColor: '#312450',
+    icon: path.join(__dirname, 'assets/icons/logo.png')
   });
 
   mainWindow.loadURL(`file://${__dirname}/app.html`);

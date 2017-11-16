@@ -1,4 +1,4 @@
-# electron-react-boilerplate
+# broadmail
 
 ### A Boilerplate for Scalable Cross-Platform Desktop Apps
 
@@ -8,9 +8,9 @@
 [![Appveyor Build Status][appveyor-image]][appveyor-url]
 [![Dependency Status][david_img]][david_site]
 [![Github Tag][github-tag-image]][github-tag-url]
-[![Join the chat at https://gitter.im/electron-react-boilerplate/Lobby](https://badges.gitter.im/electron-react-boilerplate/Lobby.svg)](https://gitter.im/electron-react-boilerplate/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![OpenCollective](https://opencollective.com/electron-react-boilerplate/backers/badge.svg)](#backers)
-[![OpenCollective](https://opencollective.com/electron-react-boilerplate/sponsors/badge.svg)](#sponsors)
+[![Join the chat at https://gitter.im/broadmail/Lobby](https://badges.gitter.im/broadmail/Lobby.svg)](https://gitter.im/broadmail/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![OpenCollective](https://opencollective.com/broadmail/backers/badge.svg)](#backers)
+[![OpenCollective](https://opencollective.com/broadmail/sponsors/badge.svg)](#sponsors)
 
 [![React](/internals/img/react-padded-90.png)](https://facebook.github.io/react/)
 [![Webpack](/internals/img/webpack-padded-90.png)](https://webpack.github.io/)
@@ -30,12 +30,12 @@
 ## Install
 
 * **Note: requires a node version >= 7 and an npm version >= 4.**
-* **If you have installation or compilation issues with this project, please see [our debugging guide](https://github.com/chentsulin/electron-react-boilerplate/issues/400)**
+* **If you have installation or compilation issues with this project, please see [our debugging guide](https://github.com/chentsulin/broadmail/issues/400)**
 
 First, clone the repo via git:
 
 ```bash
-git clone --depth=1 https://github.com/chentsulin/electron-react-boilerplate.git your-project-name
+git clone --depth=1 https://github.com/chentsulin/broadmail.git your-project-name
 ```
 
 And then install dependencies with yarn.
@@ -215,7 +215,7 @@ This boilerplate uses a [two package.json structure](https://github.com/electron
 
 ### Further Readings
 
-See the wiki page, [Module Structure — Two package.json Structure](https://github.com/chentsulin/electron-react-boilerplate/wiki/Module-Structure----Two-package.json-Structure) to understand what is native module, the rationale behind two package.json structure and more.
+See the wiki page, [Module Structure — Two package.json Structure](https://github.com/chentsulin/broadmail/wiki/Module-Structure----Two-package.json-Structure) to understand what is native module, the rationale behind two package.json structure and more.
 
 For an example app that uses this boilerplate and packages native dependencies, see [erb-sqlite-example](https://github.com/amilajack/erb-sqlite-example).
 
@@ -228,14 +228,14 @@ If you want to have native-like User Interface (OS X El Capitan and Windows 10),
 
 ## Dispatching redux actions from main process
 
-see discusses in [#118](https://github.com/chentsulin/electron-react-boilerplate/issues/118) and [#108](https://github.com/chentsulin/electron-react-boilerplate/issues/108)
+see discusses in [#118](https://github.com/chentsulin/broadmail/issues/118) and [#108](https://github.com/chentsulin/broadmail/issues/108)
 
 ## How to keep the boilerplate updated
 
 If your application is a fork from this repo, you can add this repo to another git remote:
 
 ```sh
-git remote add upstream https://github.com/chentsulin/electron-react-boilerplate.git
+git remote add upstream https://github.com/chentsulin/broadmail.git
 ```
 
 Then, use git to merge some latest commits:
@@ -252,83 +252,83 @@ git pull upstream master
 
 ## Backers
 
-Support us with a monthly donation and help us continue our activities. [[Become a backer](https://opencollective.com/electron-react-boilerplate#backer)]
+Support us with a monthly donation and help us continue our activities. [[Become a backer](https://opencollective.com/broadmail#backer)]
 
-<a href="https://opencollective.com/electron-react-boilerplate/backer/0/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/0/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/1/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/1/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/2/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/2/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/3/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/3/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/4/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/4/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/5/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/5/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/6/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/6/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/7/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/7/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/8/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/8/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/9/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/9/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/10/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/10/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/11/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/11/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/12/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/12/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/13/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/13/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/14/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/14/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/15/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/15/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/16/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/16/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/17/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/17/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/18/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/18/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/19/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/19/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/20/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/20/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/21/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/21/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/22/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/22/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/23/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/23/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/24/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/24/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/25/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/25/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/26/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/26/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/27/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/27/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/28/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/28/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/backer/29/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/backer/29/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/0/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/0/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/1/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/1/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/2/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/2/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/3/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/3/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/4/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/4/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/5/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/5/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/6/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/6/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/7/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/7/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/8/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/8/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/9/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/9/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/10/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/10/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/11/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/11/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/12/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/12/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/13/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/13/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/14/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/14/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/15/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/15/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/16/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/16/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/17/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/17/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/18/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/18/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/19/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/19/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/20/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/20/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/21/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/21/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/22/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/22/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/23/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/23/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/24/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/24/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/25/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/25/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/26/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/26/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/27/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/27/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/28/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/28/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/backer/29/website" target="_blank"><img src="https://opencollective.com/broadmail/backer/29/avatar.svg"></a>
 
 ## Sponsors
 
-Become a sponsor and get your logo on our README on Github with a link to your site. [[Become a sponsor](https://opencollective.com/electron-react-boilerplate#sponsor)]
+Become a sponsor and get your logo on our README on Github with a link to your site. [[Become a sponsor](https://opencollective.com/broadmail#sponsor)]
 
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/0/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/1/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/2/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/3/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/4/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/5/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/6/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/7/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/8/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/9/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/9/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/10/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/10/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/11/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/11/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/12/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/12/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/13/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/13/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/14/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/14/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/15/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/15/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/16/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/16/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/17/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/17/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/18/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/18/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/19/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/19/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/20/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/20/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/21/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/21/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/22/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/22/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/23/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/23/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/24/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/24/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/25/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/25/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/26/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/26/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/27/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/27/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/28/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/28/avatar.svg"></a>
-<a href="https://opencollective.com/electron-react-boilerplate/sponsor/29/website" target="_blank"><img src="https://opencollective.com/electron-react-boilerplate/sponsor/29/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/0/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/1/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/2/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/3/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/4/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/5/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/6/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/7/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/8/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/9/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/9/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/10/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/10/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/11/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/11/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/12/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/12/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/13/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/13/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/14/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/14/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/15/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/15/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/16/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/16/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/17/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/17/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/18/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/18/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/19/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/19/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/20/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/20/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/21/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/21/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/22/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/22/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/23/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/23/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/24/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/24/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/25/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/25/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/26/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/26/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/27/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/27/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/28/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/28/avatar.svg"></a>
+<a href="https://opencollective.com/broadmail/sponsor/29/website" target="_blank"><img src="https://opencollective.com/broadmail/sponsor/29/avatar.svg"></a>
 
 ## License
 MIT © [C. T. Lin](https://github.com/chentsulin)
 
-[npm-image]: https://img.shields.io/npm/v/electron-react-boilerplate.svg?style=flat-square
-[github-tag-image]: https://img.shields.io/github/tag/chentsulin/electron-react-boilerplate.svg
-[github-tag-url]: https://github.com/chentsulin/electron-react-boilerplate/releases/latest
-[travis-image]: https://travis-ci.org/chentsulin/electron-react-boilerplate.svg?branch=master
-[travis-url]: https://travis-ci.org/chentsulin/electron-react-boilerplate
-[appveyor-image]: https://ci.appveyor.com/api/projects/status/github/chentsulin/electron-react-boilerplate?svg=true
-[appveyor-url]: https://ci.appveyor.com/project/chentsulin/electron-react-boilerplate/branch/master
-[david_img]: https://img.shields.io/david/chentsulin/electron-react-boilerplate.svg
-[david_site]: https://david-dm.org/chentsulin/electron-react-boilerplate
+[npm-image]: https://img.shields.io/npm/v/broadmail.svg?style=flat-square
+[github-tag-image]: https://img.shields.io/github/tag/chentsulin/broadmail.svg
+[github-tag-url]: https://github.com/chentsulin/broadmail/releases/latest
+[travis-image]: https://travis-ci.org/chentsulin/broadmail.svg?branch=master
+[travis-url]: https://travis-ci.org/chentsulin/broadmail
+[appveyor-image]: https://ci.appveyor.com/api/projects/status/github/chentsulin/broadmail?svg=true
+[appveyor-url]: https://ci.appveyor.com/project/chentsulin/broadmail/branch/master
+[david_img]: https://img.shields.io/david/chentsulin/broadmail.svg
+[david_site]: https://david-dm.org/chentsulin/broadmail
