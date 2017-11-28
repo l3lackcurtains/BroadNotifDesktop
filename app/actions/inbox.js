@@ -87,5 +87,5 @@ export const getInboxResetAction = () => dispatch => {
 }
 
 export const removeInboxResetAction = () => dispatch => {
-	dispatch(getInboxReset());
+	dispatch(removeInboxReset());
 }

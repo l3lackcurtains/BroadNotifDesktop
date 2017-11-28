@@ -1,21 +1,21 @@
 // @flow
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Row, Col, Grid } from 'react-flexbox-grid'
 import { Event } from 'react-socket-io'
 import Sound from 'react-sound'
-import Moment from 'react-moment';
-import { Card, CardHeader, CardText } from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
-import ReactHtmlParser from 'react-html-parser'
-import styles from './MainContent.css';
-import CircularProgress from 'material-ui/CircularProgress';
+import Moment from 'react-moment'
+import { Card, CardHeader, CardText } from 'material-ui/Card'
+import FlatButton from 'material-ui/FlatButton'
+import Parser from 'html-react-parser'
+import styles from './MainContent.css'
+import CircularProgress from 'material-ui/CircularProgress'
 import { getInboxAction, getInboxResetAction, removeInboxAction, removeInboxResetAction } from '../actions/inbox'
 
 class Main extends Component {
 	constructor(props, context) {
-		super(props, context);
-		this.onMessage = this.onMessage.bind(this);
+		super(props, context)
+		this.onMessage = this.onMessage.bind(this)
 	}
 
 	state = {
@@ -29,13 +29,14 @@ class Main extends Component {
 
 	componentWillReceiveProps(nextProps) {
 		if (nextProps.removeInbox.isReceived && nextProps.inbox.isReceived) {
-			console.log('yeahhh')
+			this.props.dispatch(removeInboxResetAction())
 			this.props.dispatch(getInboxResetAction())
 		}
 	}
 	componentWillUnmount() {
 		this.props.dispatch(getInboxResetAction())
 		this.props.dispatch(removeInboxResetAction())
+		console.log('reset 2')
 	}
 
 	onMessage = (d) => {
@@ -97,7 +98,10 @@ class Main extends Component {
 												/>
 												<CardText expandable>
 													<b>{m.subject}</b>
-													<p>{ReactHtmlParser(m.body)}</p>
+													<p>{
+															// Parser(m.body)
+														}
+													</p>
 												</CardText>
 											</Card>
 										</Col>
@@ -115,7 +119,7 @@ class Main extends Component {
 					onFinishedPlaying={this.handleSongFinishedPlaying}
 				/>
 			</div>
-		);
+		)
 	}
 }
 

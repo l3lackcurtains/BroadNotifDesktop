@@ -1,3 +1,3 @@
 export default {
-	apiPage: 'http://localhost:3000'
+	apiPage: 'http://broadmail.herokuapp.com'
 }

@@ -28,12 +28,14 @@ const removeInboxRe = (state = initState, action) => {
 	case A.REC_REMOVE_INBOX_ERR:
 		return {
 			...state,
+			isReceived: false,
 			error: true,
 			data: action.data,
 		}
 	case A.RESET_REMOVE_INBOX:
 		return {
 			isReceived: false,
+			isLoading: false,
 			data: {},
 			error: false,
 		}

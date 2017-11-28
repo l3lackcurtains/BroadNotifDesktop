@@ -1,11 +1,11 @@
 // @flow
 import React, { Component } from 'react';
-import Main from '../components/Main';
+import MainContent from '../components/MainContent';
 
 export default class MainPage extends Component {
 	render() {
 		return (
-			<Main {...this.props} />
+			<MainContent {...this.props} />
 		);
 	}
 }

@@ -15,7 +15,7 @@ export default class NavBar extends Component {
 			<Grid>
 				<Row>
 					<Col xs={11}>
-						<Link to="/"><img className={styles.logo} src="https://broadlink.com.np/assets/frontend/img/logo_.png" alt="BroadLink" /></Link>
+						<Link to="/"><img className={styles.logo} src="http://paschimanchalsolution.com.np/wp-content/uploads/2016/04/ps@logo.png" alt="BroadLink" /></Link>
 					</Col>
 					<Col xs={1}>
 						<Link to="/setup" className={styles.setup}>

@@ -6,8 +6,8 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import Routes from '../routes';
 import { Socket } from 'react-socket-io'
 
-const uri = 'http://localhost:3000';
-const options = { transports: ['websocket'], reconnection: true, autoConnect: true };
+const uri = 'http://broadmail.herokuapp.com';
+const options = { transports: ['websocket'] };
 type RootType = {
 	store: {},
 	history: {}
